@@ -3,7 +3,7 @@ export interface TextAreaM {
   width?: string;
   minHeight?: string;
   maxHeight?: string;
-  placeholder?: string | null | undefined;
+  placeholder?: string | undefined;
   fontSize?: string;
   fontWeight?: string;
   color?: string;
