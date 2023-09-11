@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 export interface WrapM {
+  cursor?: string;
   padding?: string;
   justifyContent?: string;
   gap?: string;
@@ -27,5 +28,8 @@ export interface WrapM {
   position?: string;
   bottom?: string;
   left?: string;
+  mediaFlexDirection?: string;
+  mediaJustifyContent?: string;
+  effectHover?: string;
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }

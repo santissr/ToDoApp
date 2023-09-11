@@ -51,10 +51,10 @@ export const AddTodo = () => {
         border="none"
         type="submit"
         width="fit-content"
-        backGround="#1B5CED"
-        borderRadius="0.5rem"
+        backGround="#FFF"
+        padding="0"
       >
-        <AddIconSvg size="50" />
+        <AddIconSvg />
       </Button>
     </FormTag>
   );

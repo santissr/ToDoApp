@@ -19,6 +19,9 @@ export const Button = ({
   fontWeight,
   fontFamily,
   maxWidth,
+  justifyContent,
+  display,
+  cursor,
 }: ButtonM) => {
   return (
     <ButtonTag
@@ -37,9 +40,12 @@ export const Button = ({
       fontWeight={fontWeight}
       fontFamily={fontFamily}
       maxWidth={maxWidth}
+      display={display}
+      justifyContent={justifyContent}
+      cursor={cursor}
     >
-      {text}
       {children}
+      {text}
     </ButtonTag>
   );
 };

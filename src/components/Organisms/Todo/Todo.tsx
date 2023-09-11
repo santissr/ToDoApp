@@ -34,6 +34,8 @@ export const Todo = ({ isComplete, dataTodos, onComplete }: TodoI) => {
     <>
       {todosFilter.map((todo) => (
         <Wrap
+          cursor="pointer"
+          effectHover="yes"
           key={todo.contentTodo}
           hoverBack="#A4C3FD"
           padding="0.5rem 1rem"

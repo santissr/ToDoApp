@@ -14,6 +14,9 @@ interface ButtonI {
   fontWeight?: string;
   fontFamily?: string;
   maxWidth?: string;
+  display?: string;
+  justifyContent?: string;
+  cursor?: string;
 }
 
 export const ButtonTag = styled.button<ButtonI>`
@@ -23,6 +26,11 @@ export const ButtonTag = styled.button<ButtonI>`
 
   ${({ height }) => (height ? `height: ${height}` : null)};
 
+  ${({ display }) => (display ? `display: ${display}` : null)};
+  ${({ justifyContent }) =>
+    justifyContent ? `justify-content: ${justifyContent}` : null};
+
+  ${({ cursor }) => (cursor ? `cursor: ${cursor}` : null)};
   border-radius: ${({ borderRadius }) =>
     borderRadius ? borderRadius : "5rem"};
   background: ${({ backGround }) => (backGround ? backGround : "black")};
@@ -41,4 +49,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 2.4rem; /* 150% */`
       : null};
+
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 255, 0.5);
+    border-color: #99c2ff;
+  }
 `;

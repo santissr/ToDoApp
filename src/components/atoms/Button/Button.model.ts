@@ -18,4 +18,7 @@ export interface ButtonM {
   fontWeight?: string;
   fontFamily?: string;
   maxWidth?: string;
+  display?: string;
+  justifyContent?: string;
+  cursor?: string;
 }

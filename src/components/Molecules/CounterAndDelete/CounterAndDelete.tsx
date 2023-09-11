@@ -1,4 +1,5 @@
 import { Button } from "../../atoms/Button/Button";
+import { DeleteIcon } from "../../atoms/DeleteIcon/DeleteIcon";
 import { Text } from "../../atoms/Text/Text";
 import { Wrap } from "../../atoms/Wrap/Wrap";
 
@@ -21,13 +22,17 @@ export const CounterAndDelete = ({
     <Wrap alignItems="center" gap="0.5rem">
       <Text text={textTodo} color="#000" fontWeight="400" width="100%" />
       <Button
+        children={<DeleteIcon />}
         onClick={onDelete}
+        cursor="pointer"
         height="fit-content"
-        padding="1rem"
+        display="flex"
+        justifyContent="space-around"
+        padding="1rem 0"
         borderRadius="1rem"
         border="1px solid #575757"
         backGround="white"
-        text="X Clear"
+        text=" Clear"
         isButton1={true}
         minWidth="7.3rem"
       />

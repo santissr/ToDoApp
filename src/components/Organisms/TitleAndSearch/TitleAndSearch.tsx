@@ -13,8 +13,22 @@ export const TitleAndSearch = ({
   setSearchValue,
 }: TitleAndSearchI) => {
   return (
-    <Wrap flexDirection="column" alignItems="center" gap="2rem">
-      <Title text="ToDoApp" fontSize="2rem" />
+    <Wrap
+      flexDirection="column"
+      alignItems="center"
+      gap="2rem"
+      media="744px"
+      mediaDisplay="flex"
+      mediaFlexDirection="row"
+      mediaJustifyContent="space-between"
+    >
+      <Title
+        text="ToDoApp"
+        fontSize="2rem"
+        textAlign="center"
+        media="744px"
+        mediaTextAlign="start"
+      />
       <Wrap>
         <TodoSearch
           value={searchValue}
@@ -22,7 +36,9 @@ export const TitleAndSearch = ({
             setSearchValue && setSearchValue(event.target.value);
           }}
         />
-        <SearchIcon />
+        <Wrap media="744px" mediaDisplay="none" width="fit-content">
+          <SearchIcon />
+        </Wrap>
       </Wrap>
     </Wrap>
   );

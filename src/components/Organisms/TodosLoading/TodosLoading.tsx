@@ -10,7 +10,7 @@ export const TodosLoading = () => {
         <FaSpinner size="5rem" />
       </RotatingIcon>
       <Text
-        text="Cargando..."
+        text="Loading..."
         textAlign="center"
         fontSize="2.5rem"
         fontWeight="700"

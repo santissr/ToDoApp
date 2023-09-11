@@ -87,6 +87,7 @@ export const ContentTodo = () => {
               color="#000"
             />
             <Button
+              cursor="pointer"
               width="100%"
               maxWidth="40rem"
               text="ToDo"
@@ -102,7 +103,7 @@ export const ContentTodo = () => {
         )}
         {/* )} */}
         <Wrap flexDirection="row" justifyContent="space-between">
-          <Wrap width="fit-content" onClick={onDelete}>
+          <Wrap width="fit-content" onClick={onDelete} cursor="pointer">
             <DeleteIcon />
           </Wrap>
           <Wrap
@@ -113,6 +114,8 @@ export const ContentTodo = () => {
             gap="1.1rem"
             backGround="#F5F7FB"
             borderRadius="0.5rem"
+            cursor="pointer"
+            effectHover="yes"
           >
             <EditIcon />
             <Text
@@ -133,6 +136,8 @@ export const ContentTodo = () => {
               gap="1rem"
               backGround="#0950ED"
               borderRadius="0.5rem"
+              cursor="pointer"
+              effectHover="yes"
             >
               <Wrap>
                 <CheckModal />

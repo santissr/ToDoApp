@@ -7,6 +7,9 @@ export const Title = ({
   fontWeight,
   text,
   fontFamily,
+  textAlign,
+  media,
+  mediaTextAlign,
 }: TitleM) => {
   return (
     <TitleTag
@@ -14,6 +17,9 @@ export const Title = ({
       fontSize={fontSize}
       fontFamily={fontFamily}
       fontWeight={fontWeight}
+      textAlign={textAlign}
+      media={media}
+      mediaTextAlign={mediaTextAlign}
     >
       {text}
     </TitleTag>

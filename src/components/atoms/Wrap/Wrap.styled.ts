@@ -21,8 +21,13 @@ interface WrapI {
   bottom?: string;
   left?: string;
 
+  cursor?: string;
+  effectHover?: string;
+
   mediaDisplay?: string;
   media?: string;
+  mediaFlexDirection?: string;
+  mediaJustifyContent?: string;
 
   media2?: string;
   media2maxWidth?: string;
@@ -69,12 +74,21 @@ export const WrapTag = styled.div<WrapI>`
 
   &:hover {
     background: ${({ hoverBack }) => (hoverBack ? hoverBack : null)};
+    ${({ effectHover }) =>
+      effectHover === "yes"
+        ? `box-shadow: 0 0 1rem rgba(0, 0, 255, 0.5);
+    border-color: #99c2ff;`
+        : null};
+    ${({ cursor }) => (cursor ? `cursor: ${cursor}` : null)};
   }
 
-  ${({ media, mediaDisplay }) =>
+  ${({ media, mediaDisplay, mediaFlexDirection, mediaJustifyContent }) =>
     media
       ? `@media screen and (min-width: ${media}) {
     display: ${mediaDisplay};
+    flex-direction:${mediaFlexDirection};
+    justify-content: ${mediaJustifyContent}
+
 
   }`
       : null}

@@ -29,11 +29,16 @@ export const Wrap = ({
   position,
   bottom,
   left,
+  mediaFlexDirection,
+  mediaJustifyContent,
+  effectHover,
+  cursor,
 }: WrapM) => {
   return (
     <WrapTag
       onClick={onClick}
       padding={padding}
+      cursor={cursor}
       justifyContent={justifyContent}
       gap={gap}
       borderRadius={borderRadius}
@@ -58,6 +63,9 @@ export const Wrap = ({
       position={position}
       bottom={bottom}
       left={left}
+      mediaFlexDirection={mediaFlexDirection}
+      mediaJustifyContent={mediaJustifyContent}
+      effectHover={effectHover}
     >
       {children}
     </WrapTag>

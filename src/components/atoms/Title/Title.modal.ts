@@ -4,4 +4,7 @@ export interface TitleM {
   fontSize?: string;
   fontWeight?: string;
   text?: string;
+  textAlign?: string;
+  media?: string;
+  mediaTextAlign?: string;
 }
